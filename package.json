@@ -57,5 +57,8 @@
   "bugs": {
     "url": "https://github.com/geut/socket.io-streamify/issues"
   },
-  "homepage": "https://github.com/geut/socket.io-streamify#readme"
+  "homepage": "https://github.com/geut/socket.io-streamify#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }

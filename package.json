@@ -4,6 +4,11 @@
   "description": "Convert a socket.io socket into a stream.",
   "main": "index.js",
   "browser": "browser.js",
+  "files": [
+    "lib",
+    "index.js",
+    "browser.js"
+  ],
   "scripts": {
     "test": "jest --passWithNoTests",
     "posttest": "npm run lint",

@@ -1,0 +1,56 @@
+{
+  "name": "@geut/socket.io-streamify",
+  "version": "1.0.0",
+  "description": "Convert a socket.io socket into a stream.",
+  "main": "index.js",
+  "browser": "browser.js",
+  "scripts": {
+    "test": "jest --passWithNoTests",
+    "posttest": "npm run lint",
+    "lint": "eslint \"**/*.js\"",
+    "version": "chan release --allow-yanked ${npm_package_version} && git add .",
+    "prepublishOnly": "npm test"
+  },
+  "dependencies": {
+    "duplexify": "^4.1.1",
+    "readable-stream": "^3.4.0",
+    "safe-buffer": "^5.2.0",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0"
+  },
+  "devDependencies": {
+    "@geut/chan": "^2.0.0",
+    "eslint": "^6.0.1",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "get-port": "^5.0.0",
+    "jest": "^24.8.0",
+    "wait-for-expect": "^2.0.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geut/socket.io-streamify.git"
+  },
+  "keywords": [
+    "socket.io",
+    "stream",
+    "geut"
+  ],
+  "author": {
+    "name": "GEUT",
+    "email": "contact@geutstudio.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geut/socket.io-streamify/issues"
+  },
+  "homepage": "https://github.com/geut/socket.io-streamify#readme"
+}

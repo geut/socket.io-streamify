@@ -40,7 +40,7 @@ createServer(3000, stream => {
 })
 ```
 
-## <a name="api">/a> API
+## <a name="api"></a> API
 
 #### `const stream = streamify(url|socket, [options])`
 
